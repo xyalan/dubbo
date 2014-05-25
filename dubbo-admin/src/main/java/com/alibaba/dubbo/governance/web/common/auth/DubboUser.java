@@ -23,8 +23,7 @@ public class DubboUser implements Serializable {
 
 	private static final ThreadLocal<User> userHolder = new ThreadLocal<User>();
 
-	private DubboUser() {
-	}
+	private DubboUser() {}
 
     public static final User getCurrentUser() {
         return (User) userHolder.get();
